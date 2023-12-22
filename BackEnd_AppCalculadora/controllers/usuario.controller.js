@@ -1,5 +1,6 @@
 const Usuario = require('./../models/usuario');
 const usuarioCtrl = {};
+const bcrypt = require("bcrypt");
 
 usuarioCtrl.getUsuarios = async (req, res) => {
     const usuarios = await Usuario.find();
@@ -9,6 +10,8 @@ usuarioCtrl.getUsuarios = async (req, res) => {
 usuarioCtrl.createUsuario = async (req, res) => {
     console.log("Creando usuario");
     const usuario = new Usuario(req.body);
+    const salt = await bcrypt.genSalt(10);
+    usuario.contrasenia = await bcrypt.hash(usuario.contrasenia, salt);
     await usuario.save();
     res.json({
         'status': 'Usuario guardado'
