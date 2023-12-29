@@ -1,1 +1,42 @@
-node_modules
+
+
+FrontEnd_AppCalculadora/dist
+FrontEnd_AppCalculadora/tmp
+FrontEnd_AppCalculadora/out-tsc
+FrontEnd_AppCalculadora/bazel-out
+
+# Node
+/node_modules
+FrontEnd_AppCalculadora/node_modules
+FrontEnd_AppCalculadora/npm-debug.log
+FrontEnd_AppCalculadora/yarn-error.log
+
+# IDEs and editors
+FrontEnd_AppCalculadora/.idea/
+FrontEnd_AppCalculadora/.project
+FrontEnd_AppCalculadora/.classpath
+FrontEnd_AppCalculadora/.c9/
+*.launch
+FrontEnd_AppCalculadora/.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+FrontEnd_AppCalculadora/.vscode/*
+FrontEnd_AppCalculadora/!.vscode/settings.json
+FrontEnd_AppCalculadora/!.vscode/tasks.json
+FrontEnd_AppCalculadora/!.vscode/launch.json
+FrontEnd_AppCalculadora/!.vscode/extensions.json
+FrontEnd_AppCalculadora/.history/*
+
+# Miscellaneous
+FrontEnd_AppCalculadora/.angular/cache
+FrontEnd_AppCalculadora/.sass-cache/
+FrontEnd_AppCalculadora/connect.lock
+FrontEnd_AppCalculadora/coverage
+FrontEnd_AppCalculadora/libpeerconnection.log
+FrontEnd_AppCalculadora/testem.log
+FrontEnd_AppCalculadora/typings
+
+# System files
+FrontEnd_AppCalculadora/.DS_Store
+FrontEnd_AppCalculadora/Thumbs.db
